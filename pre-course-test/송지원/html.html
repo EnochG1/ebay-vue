@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>사전 입과 테스트</title>
+    <style>
+        div.container {
+            outline: 2px solid black;
+        }
+
+        .main {
+            width: 400px;
+            height: 300px;
+            background-color: beige;
+            display: table;
+        }
+
+        .left-layer {
+            background-color: bisque;
+            width: 28.5%;
+            height: 100%;
+            float: left;
+        }
+
+        .right-layer {
+            background-color: pink;
+            width: 71.5%;
+            height: 100%;
+            float: right;
+        }
+
+        .right-layer .right-container {
+            padding: 10px;
+        }
+
+        .right-layer button {
+            border: 0;
+            background-color: white;
+            padding: 5px 10px 5px 10px;
+        }
+
+        .left-element {
+            outline: 2px solid black;
+            height: 10%;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .left-element:hover {
+            color: lightgray;
+        }
+
+        .left-footer {
+            font-size: 12px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-layer container">
+            <table style="width: 100%; height: 100%">
+                <tr>
+                    <td class="left-element">news</td>
+                </tr>
+                <tr>
+                    <td class="left-element">posts</td>
+                </tr>
+                <tr>
+                    <td class="left-element">profile</td>
+                </tr>
+                <tr>
+                    <td class="left-footer">2019 Ebay Korea</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-layer container">
+            <div class="right-container">
+                <div style="margin-bottom: 20px;">Hello Ebay</div>
+                <button>Read more...</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
